@@ -1,0 +1,26 @@
+<!-- BLOGPOST.TPL -->
+<div class="blog-page scroll-page hp_blog putpagemHeight">
+  <div ng-include = "'views/header.html'"></div>
+  <div class="container text-left blog-header">
+    <h3 class="cabin"> {{catListItem.name}} </h3>
+    <i class="fa fa-calendar-o"></i> {{catListItem.date}}  &nbsp;&nbsp;&nbsp;<i class="fa fa-heart-o"></i>{{catListItem.featured}} &nbsp;&nbsp;&nbsp; <i class="fa fa-pencil"></i> Ganesan Karuppaiya </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="text-left img-blog" > <img ng-src={{catListItem.icon}} alt="Blog Item" draggable="false"> </div>
+        <div class="clear-fix"></div>
+        <div class="pull-left" > <span blcat title={{catListItem.category}}> </span> <span bltags title={{catListItem.tags}} class="clear-fix bltagsc" ng-if="catListItem.tags != ''"> </span> </div>
+        <div class="clear-fix"></div>
+        <div ng-bind-html="renderHtml(catListItem.desc)" class="text-left"> </div>
+      </div>
+      <div class="col-md-3 blog-sidebar">
+        <h4>Categories</h4>
+        <ul class="">
+          <li class=""><a ng-href="#/blog/posts">ALL POSTS</a></li>
+          <li class=""  ng-repeat="categoryListItem in categoryListData"><a  ng-href="#/blog/{{categoryListItem.url}}">{{categoryListItem.name}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div ng-include = "'views/footer.html'"></div>
+</div>

@@ -1,0 +1,59 @@
+<!-- BLOG CATEGORY.TPL -->
+<div class="blog-page scroll-page hp_blog putpagemHeight">
+  <div ng-include = "'views/header.html'"></div>
+  <div class="container text-center blog-header">
+    <h2 class="cabin">
+      <div class="btn-group use-btn-blog"> <a  class="use-btn   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> {{BlogTitle}} <i class="fa fa-angle-double-down"></i> </a>
+        <ul class="dropdown-menu blog-drop">
+          <li><a ng-href="#/blog/posts">ALL POSTS</a></li>
+          <li role="separator" class="divider"></li>
+          <li  ng-repeat="categoryListItem in categoryListData"><a  ng-href="#/blog/{{categoryListItem.url}}">{{categoryListItem.name}}</a></li>
+        </ul>
+      </div>
+    </h2>
+  </div>
+  <div class="container ">
+    <div class="row ">
+      <div class="col-sm-10 col-md-offset-1 text-justify  text-white  " >
+        <p >{{BlogDesc}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="row">
+          <div  ng-repeat="postListItem in postListData"  class="col-sm-6 col-pad" ng-class="{'clear-fix' : $index % 2 == 0}""
+			style="background-color:#{{postListItem.class}} ; color:#{{postListItem.color}}">
+            <article class="entry design with-image text-justify" >
+              <div class="overlay-effect effects clearfix">
+                <div class="img img-blog"> <img ng-src={{postListItem.icon}} alt="Blog Item" draggable="false">
+                  <div class="overlayblog"> <a ng-href="#/blog/posts/{{postListItem.url}}" class="expand"><i class="fa fa-chevron-circle-right"></i><br>
+                    Read More</a> </div>
+                </div>
+              </div>
+              <div class="container-fluid bloglistcatdate clearfix">
+                <div class="clear-fix"></div>
+                <div class="row">
+                  <div class="col-xs-2 text-center">
+                    <div class="bloglistdate pull-right " > 
+                      <i class="fa fa-calendar fa-2x"></i> 
+                      <span appdate title={{postListItem.date}}  ></span>
+                      <i class="fa fa-heart-o fa-2x" ng-if="postListItem.featured != ''"> {{postListItem.featured}}</i> 
+                      </div>
+                  </div>
+                  <div class="col-xs-10">
+                    <h4><a ng-href="#/blog/posts/{{postListItem.url}}"> {{postListItem.name}} </a></h4>
+                    <div class="homegriddesc text-justify" ng-bind-html="renderHtml50(postListItem.desc) " > </div>
+                    <span  title={{postListItem.category}} class="ng-hide"> {{postListItem.category}}</span> <span bltags title={{postListItem.tags}} class="clear-fix bltagsc ng-hide" ng-if="postListItem.tags != ''"> </span> </div>
+                </div>
+                <div class="clear-fix"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div ng-include = "'views/footer.html'"></div>
+</div>

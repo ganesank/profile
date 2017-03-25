@@ -1,0 +1,32 @@
+[
+  
+  {
+    "name": "VISUALISING IDEAS",
+    "id": 1,
+	"img": "images/brain.png",
+	"class": " ",
+	"url": "/about/profile",
+	"desc": "Every great design starts with an simple idea and best way to present an idea is to visualise it. It makes your idea alive. In many cases, visualisation helps to understand the story of the business idea."
+	
+  },
+   {
+    "name": "INNOVATIVE INTERFACES",
+    "id": 2,
+	"img": "images/responsive-icon.png",
+	"class": "delay-05s",
+	"url": "/about/profile",
+	"desc": "It’s very important that all the fundamental parts are well defined and working This is where problem solving meets visual impact. I’ll unite products and users, design and experiences."
+	
+  },
+   {
+    "name": "BUILDING  PRODUCTS",
+    "id": 3,
+	"img": "images/programmer.png",
+	"class": "delay-1s",
+	"url": "/about/profile",
+	"desc": "It doesn’t stop with design. I can develop your product from visual concept to fully functional website with defined standards. "
+	
+  }
+  
+  
+]
