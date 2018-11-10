@@ -18,15 +18,21 @@
                 "id": 1,
                 "title": "Github",
                 "icon": "fa-github",
-                "url": "https://github.com/ganesankaruppaiyah"
+                "url": "https://github.com/ganesankar"
             },
             {
                 "name": "linkedIn",
                 "id": 1,
                 "title": "LinkedIn",
                 "icon": "fa-linkedin",
-                "url": "https://in.linkedin.com/in/ganesankaruppaiyah"
-            },
+                "url": "https://in.linkedin.com/in/ganesankar"
+            },{
+                    "name": "instagram",
+                    "id": 1,
+                    "title": "Instagram",
+                    "icon": "fa-instagram",
+                    "url": "https://www.instagram.com/ganesankar/"
+                },
             {
                 "name": "twitter",
                 "id": 1,
@@ -39,21 +45,21 @@
                 "id": 1,
                 "title": "Facebook",
                 "icon": "fa-facebook",
-                "url": "http://facebook.com/ganesan.karuppaiyah"
+                "url": "http://facebook.com/ganesankars"
             },
             {
                 "name": "medium",
                 "id": 1,
                 "title": "Medium",
                 "icon": "fa-medium",
-                "url": "https://medium.com/@ganesankaruppaiyah/"
+                "url": "https://medium.com/@ganesankar/"
             },
             {
                 "name": "pinterest",
                 "id": 1,
                 "title": "Pinterest",
                 "icon": "fa-pinterest",
-                "url": "https://www.pinterest.com/ganesankaruppaiyah/"
+                "url": "https://www.pinterest.com/ganesankar/"
             },
             {
                 "name": "flickr",
