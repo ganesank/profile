@@ -62,13 +62,6 @@
                 "url": "https://www.pinterest.com/ganesankar/"
             },
             {
-                "name": "flickr",
-                "id": 1,
-                "title": "Flickr",
-                "icon": "fa-flickr",
-                "url": "https://www.flickr.com/photos/ganesank/"
-            },
-            {
                 "name": "skype",
                 "id": 1,
                 "title": "Skype",
