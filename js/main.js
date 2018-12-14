@@ -192,7 +192,6 @@ window.onload = function () {
                 this.activeImage = 'http://ganny.in/wp-content/uploads/2018/11/48015c10c64f38f5a2a7a0cc9bd3b9c5.jpg';
             },
             handleScroll() {
-				console.log("Hrloow")
                 if (window.scrollY > 100) {
                     this.scrolled = true;
                     // move up!

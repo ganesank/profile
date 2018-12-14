@@ -2979,4 +2979,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
+.logofooter {
+    FONT-SIZE: 23PX;
+    LETTER-SPACING: 5PX;
+    padding: 0 10px;
+    font-size: 27px;
+    background: linear-gradient(90deg, #c442da 0%, #2196F3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
 .fullscreen {height: 100vh;}
