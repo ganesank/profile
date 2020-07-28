@@ -1,0 +1,43 @@
+<awards><div class="d-flex align-items-center  h100vh pl-4 pt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-desc col-sm-8">
+                    <span class="heading-meta">awards</span>
+                    <h3> Happy times isn't it ?</h3>
+                    <p> </p>
+
+                </div>
+            </div>
+            <div class="row" each={ (link, index) in props.data }>
+                <div class="col-lg-6 pl-3">
+                    <div class="page-feature animate-box fadeInLeft animated mb-0" data-animate-effect="fadeInLeft">
+
+                        <div class="page-text">
+                            <h3 class="mb-0 mt-3">{link.title}</h3>
+
+                            <h4 class="card-subtitle mb-0 mt-0"> <a href={link.link} target="_blank">{link.company} </a>
+                                <br /> {link.location}</h5>
+                                <p class="badge" href="#">{link.startdate} - {link.enddate}</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+    <script>
+
+    </script>
+    <style>
+
+    </style>
+
+    </awards>

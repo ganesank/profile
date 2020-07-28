@@ -1,0 +1,50 @@
+<skills>
+
+	<div class="d-flex align-items-center  h100vh pl-4 pt-4">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="about-desc col-sm-8">
+					<span class="heading-meta">What I Use</span>
+					<h3> Technology and tools I use </h3>
+					<p> </p>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 p-3" each={ link in props.data }>
+					<div class="page-feature animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+
+						<div class="page-text">
+							<h3>{link.title}</h3>
+							<ul>
+								<li each={ link1 in link.content }>
+
+									<h4 class="card-subtitle">{link1.title}</h4>
+									<span class="badge " each={ link2 in link1.content }>{ link2.title }</span>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+
+
+		</div>
+	</div>
+	<script>
+		export default {
+
+		}
+	</script>
+
+
+	<style>
+		
+	</style>
+</skills>

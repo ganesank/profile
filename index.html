@@ -27,196 +27,54 @@
 	<title> Ganesan Karuppaiya : Github Profile</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/vue.js"></script>
-	<script src="js/main.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css" rel="stylesheet">
+	
+	<link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 	<div class="c-preloader  js-preloader">
 		<div class="c-preloader__spinner  t-preloader__spinner"></div>
 	</div>
-	<div class="c-main-container  js-main-container" id="app">
-		<header id="header" id="home" :class="{'fixed': scrolled}" v-on="handleScroll">
-			<div class="container">
-				<div class="row align-items-center justify-content-between d-flex">
-					<div class="logo text-blue">
-						<a class="logo text-blue" href="index.html">GANNY</a>
-					</div>
-					<nav id="nav-menu-container">
-						<div class="header-social d-flex align-items-center">
-							<a v-for="socialitem in social" v-bind:href="socialitem.elink">
-								<span class="fa " :class="socialitem.icon"></span>
-							</a>
-						</div>
-					</nav>
-					<!-- #nav-menu-container -->
-				</div>
-			</div>
-		</header>
-		<!-- #header -->
-		<!-- start banner Area -->
-		<section class="banner-area relative" id="home">
-			<div class="container">
-				<div class="row fullscreen d-flex align-items-center justify-content-start">
-					<div class="banner-content col-lg-7 col-md-12">
-						<h1 class="text-uppercase text-blue"> SO MUCH MORE THAN PIXELS</h1>
-						<h3 class="text-orange text-b400">
-							I'm Ganesan and i design digital platforms that elevate the user experience
-						</h3>
-						<div v-html="introcontent"> </div>
-						<a href="#" class="primary-btn header-btn text-uppercase">EXPLORE MORE</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End banner Area -->
+	<main></main>
 
-		<!-- Start info Area -->
-		<section class="info-area pb-5" id="about">
-			<div class="container-fluid">
-				<div class="row d-flex justify-content-end align-items-center">
-					<div class="col-lg-6 col-md-12 info-left no-padding pr-5">
-						<img class="img-fluid" src="images/info-img.jpg" alt="">
-					</div>
-					<div class="col-lg-6 col-md-12 info-right no-padding">
-						<div v-html="aboutContent"> </div>
-						<button class="primary-btn mt-20 text-uppercase"> MY SERVICES
-							<span class="lnr lnr-arrow-right">
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End info Area -->
-		<!-- Start service Area -->
-		<section class="service-area section-gap relative" v-bind:style="{ backgroundImage: 'url(' + activeImage + ')' }">
-			<div class="overlay overlay-bg"></div>
-			<div class="container">
-				<div class="row d-flex justify-content-left text-left">
-					<div class="col-sm-1">
-						<hr class="dash" /> </div>
-					<div class="col-sm-8 pb-40 header-text text-left text-white">
-						<h6 class="mb-2  text-white">WHAT I DO</h6>
-						<h3 class="mb-2  text-white">Building Brands, Designing Interface and User Experience and more</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6" v-for="servicesitem in services" @mouseover="mouseOver(servicesitem.img)" @mouseleave="mouseOut">
-						<div class="single-service">
-							<h4>
-								{{ servicesitem.name}}</h4>
-							<p v-html="servicesitem.values"> </p>
-						</div>
-					</div>
+    <script src="https://cdn.jsdelivr.net/npm/riot@4/riot+compiler.min.js"></script>
 
-				</div>
-			</div>
-		</section>
-		<!-- End service Area -->
-		<!-- Start projects Area -->
-		<section class="projects-area relative ">
-			<div class=" section-gap">
+    <script type="riot" src="./main.riot"></script>
 
-				<div class="container">
-					<div class="row d-flex justify-content-left text-left">
-						<div class="col-sm-1">
-							<hr class="dash" /> </div>
-						<div class="col-sm-8 pb-40 header-text text-left ">
-							<h6 class="mb-2  text-blue">PROJECTS IN GITHUB</h6>
-							<h3 class="mb-2  text-orange"> Developed on research, learning and development perspective</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="active-testimonial col-12">
-							<a class="github-projects item media " v-for="projitem in otherprojects" v-bind:href="projitem.elink" target="elink">
-								<div class="thumb">
-									<img class="img-fluid" v-bind:src="projitem.img">
-								</div>
-								<div class="desc media-body">
-
-									<h4 class=" text-blue"> {{ projitem.name}} </h4>
-									<p class=" text-orange " v-html="projitem.desc"> </p>
-									<p class=" text-muted"> {{ projitem.technology}} </p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</section>
-		<!-- End projects Area -->
+	<script type="riot" src="./riot/intro.riot"></script>
+	<script type="riot" src="./riot/about.riot"></script>
+	<script type="riot" src="./riot/services.riot"></script>
+	<script type="riot" src="./riot/skills.riot"></script>
+	<script type="riot" src="./riot/experience.riot"></script>
+	<script type="riot" src="./riot/education.riot"></script>
+	<script type="riot" src="./riot/awards.riot"></script>
+	<script type="riot" src="./riot/gitprojects.riot"></script>
 
 
-		<!-- start footer Area -->
-		<footer class="footer-area pt-5 pb-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
-						<div class="single-footer-widget">
-							<div class="  ">
-								<a href="index.html" class="logofooter text-blue">GANNY</a>
-							</div>
-							<h4 class="text-white"></h4>
-							<p>
+	
+    <script type="text/javascript">
 
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
-						<div class="single-footer-widget">
-							<h4 class="text-white">Services</h4>
-							<ul>
-								<li v-for="slink in servicelinks">
-									<a v-bind:href="slink.elink" target="_blank"> {{ slink.name}} </a>
-								</li>
-							</ul>
+      // Returns a function, that, as long as it continues to be invoked, will not
+      // be triggered. The function will be called after it stops being called for
+      // N milliseconds.
+      function debounce(fn, wait) {
+        let timeout;
 
-						</div>
-					</div>
-					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
-						<div class="single-footer-widget">
-							<h4 class="text-white">Links</h4>
-							<ul>
-								<li v-for="slink in otherlinks">
-									<a v-bind:href="slink.elink" target="_blank"> {{ slink.name}} </a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
-						<div class="single-footer-widget">
-							<h4 class="text-white">Start a Conversation</h4>
-							<p class="text-underline">
-								<a href="mailto:hello@ganny.in"> hello@ganny.in </a>
-								<br>
-								<a href="tel:+919943732416"> 994 373 2416 </a>
-							</p>
-						</div>
-					</div>
+        return (...args) => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => fn(...args), wait);
+        };
+      }
 
-				</div>
-				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<p class="footer-text m-0">Copyright &copy; {{ thisyear }} All rights reserved | Ganesan Karuppaiya
-					</p>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<div class="footer-social d-flex align-items-center">
-						<a v-bind:href="socialitem.elink" v-for="socialitem in social">
-							<i class="fa " :class="socialitem.icon"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- End footer Area -->
-	</div>
-	<!-- /c-main-container -->
+      (async () => {
+        await riot.compile()
+
+        riot.mount('main')
+      })()
+    </script>
 </body>
 
 </html>

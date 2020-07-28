@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no, maximum-scale=1,  width=device-width, initial-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="keywords" content="Ganesan, Ganesan Karuppaiya, Ganesan K, Ganesan website, ganny website, ui deisnger, ux designer, ux expert, front end designer, front end developer, php developer, wordpress designer, angularjs developer"
+	/>
+	<meta name="description" content="Visit the Official website of Ganesan Karuppaiya , UI Expert from Chennai." />
+	<meta name="msvalidate.01" content="00174BC49FC4D06F67EBA3427B73F87A" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="http://ganny.in/wp-content/themes/fall/img/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Homepage | Ganesan Karuppaiya" />
+	<meta property="og:url" content="https://ganny.in/" />
+	<meta property="og:site_name" content="Ganesan Karuppaiya" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Homepage | Ganesan Karuppaiya" />
+	<meta name="twitter:site" content="@ganesankar" />
+	<meta name="twitter:creator" content="@ganesankar" />
+	<title> Ganesan Karuppaiya : Github Profile</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="c-preloader  js-preloader">
+		<div class="c-preloader__spinner  t-preloader__spinner"></div>
+	</div>
+	<div class="c-main-container  js-main-container" id="app">
+		<header id="header" id="home" :class="{'fixed': scrolled}" v-on="handleScroll">
+			<div class="container">
+				<div class="row align-items-center justify-content-between d-flex">
+					<div class="logo text-blue">
+						<a class="logo text-blue" href="index.html">GANNY</a>
+					</div>
+					<nav id="nav-menu-container">
+						<div class="header-social d-flex align-items-center">
+							<a v-for="socialitem in social" v-bind:href="socialitem.elink">
+								<span class="fa " :class="socialitem.icon"></span>
+							</a>
+						</div>
+					</nav>
+					<!-- #nav-menu-container -->
+				</div>
+			</div>
+		</header>
+		<!-- #header -->
+		<!-- start banner Area -->
+		<section class="banner-area relative" id="home">
+			<div class="container">
+				<div class="row fullscreen d-flex align-items-center justify-content-start">
+					<div class="banner-content col-lg-7 col-md-12">
+						<h1 class="text-uppercase text-blue"> SO MUCH MORE THAN PIXELS</h1>
+						<h3 class="text-orange text-b400">
+							I'm Ganesan and i design digital platforms that elevate the user experience
+						</h3>
+						<div v-html="introcontent"> </div>
+						<a href="#" class="primary-btn header-btn text-uppercase">EXPLORE MORE</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End banner Area -->
+
+		<!-- Start info Area -->
+		<section class="info-area pb-5" id="about">
+			<div class="container-fluid">
+				<div class="row d-flex justify-content-end align-items-center">
+					<div class="col-lg-6 col-md-12 info-left no-padding pr-5">
+						<img class="img-fluid" src="images/info-img.jpg" alt="">
+					</div>
+					<div class="col-lg-6 col-md-12 info-right no-padding">
+						<div v-html="aboutContent"> </div>
+						<button class="primary-btn mt-20 text-uppercase"> MY SERVICES
+							<span class="lnr lnr-arrow-right">
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End info Area -->
+		<!-- Start service Area -->
+		<section class="service-area section-gap relative" v-bind:style="{ backgroundImage: 'url(' + activeImage + ')' }">
+			<div class="overlay overlay-bg"></div>
+			<div class="container">
+				<div class="row d-flex justify-content-left text-left">
+					<div class="col-sm-1">
+						<hr class="dash" /> </div>
+					<div class="col-sm-8 pb-40 header-text text-left text-white">
+						<h6 class="mb-2  text-white">WHAT I DO</h6>
+						<h3 class="mb-2  text-white">Building Brands, Designing Interface and User Experience and more</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6" v-for="servicesitem in services" @mouseover="mouseOver(servicesitem.img)" @mouseleave="mouseOut">
+						<div class="single-service">
+							<h4>
+								{{ servicesitem.name}}</h4>
+							<p v-html="servicesitem.values"> </p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End service Area -->
+		<!-- Start projects Area -->
+		<section class="projects-area relative ">
+			<div class=" section-gap">
+
+				<div class="container">
+					<div class="row d-flex justify-content-left text-left">
+						<div class="col-sm-1">
+							<hr class="dash" /> </div>
+						<div class="col-sm-8 pb-40 header-text text-left ">
+							<h6 class="mb-2  text-blue">PROJECTS IN GITHUB</h6>
+							<h3 class="mb-2  text-orange"> Developed on research, learning and development perspective</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="active-testimonial col-12">
+							<a class="github-projects item media " v-for="projitem in otherprojects" v-bind:href="projitem.elink" target="elink">
+								<div class="thumb">
+									<img class="img-fluid" v-bind:src="projitem.img">
+								</div>
+								<div class="desc media-body">
+
+									<h4 class=" text-blue"> {{ projitem.name}} </h4>
+									<p class=" text-orange " v-html="projitem.desc"> </p>
+									<p class=" text-muted"> {{ projitem.technology}} </p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- End projects Area -->
+
+
+		<!-- start footer Area -->
+		<footer class="footer-area pt-5 pb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
+						<div class="single-footer-widget">
+							<div class="  ">
+								<a href="index.html" class="logofooter text-blue">GANNY</a>
+							</div>
+							<h4 class="text-white"></h4>
+							<p>
+
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
+						<div class="single-footer-widget">
+							<h4 class="text-white">Services</h4>
+							<ul>
+								<li v-for="slink in servicelinks">
+									<a v-bind:href="slink.elink" target="_blank"> {{ slink.name}} </a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
+						<div class="single-footer-widget">
+							<h4 class="text-white">Links</h4>
+							<ul>
+								<li v-for="slink in otherlinks">
+									<a v-bind:href="slink.elink" target="_blank"> {{ slink.name}} </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3  col-md-6 col-sm-6 pb-5">
+						<div class="single-footer-widget">
+							<h4 class="text-white">Start a Conversation</h4>
+							<p class="text-underline">
+								<a href="mailto:hello@ganny.in"> hello@ganny.in </a>
+								<br>
+								<a href="tel:+919943732416"> 994 373 2416 </a>
+							</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<p class="footer-text m-0">Copyright &copy; {{ thisyear }} All rights reserved | Ganesan Karuppaiya
+					</p>
+					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<div class="footer-social d-flex align-items-center">
+						<a v-bind:href="socialitem.elink" v-for="socialitem in social">
+							<i class="fa " :class="socialitem.icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer Area -->
+	</div>
+	<!-- /c-main-container -->
+</body>
+
+</html>
