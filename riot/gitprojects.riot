@@ -1,0 +1,43 @@
+<gitprojects>
+
+    <div class="d-flex align-items-center  h100vh pl-4 pt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="about-desc col-sm-8">
+                     <span class="heading-meta">experiments</span>
+                    <h3>  Opensource Projects developed </h3>
+                    <p> </p>
+
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col-lg-6 pl-3" each={ (link, index) in props.data }>
+                    <div class="page-feature animate-box fadeInLeft animated mb-0" data-animate-effect="fadeInLeft">
+
+                        <div class="page-text">
+                            <h3 class="mb-0 mt-3"> <a href={link.elink} target="_blank">{link.name} </a></h3>
+
+                                <p  class="mt-1 mb-1" href="#">{link.desc} </p>
+                                <p class="badge" >{link.technology} </p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+    <script>
+
+    </script>
+    <style>
+
+    </style>
+</gitprojects>
