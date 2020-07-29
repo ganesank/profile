@@ -1,0 +1,48 @@
+<blog>
+
+    <div class="d-flex align-items-center  h100vh pl-4 pt-4">
+        <div class="colorlib-blog">
+            <div class="container-fluid">
+                <div class="row">
+                <div class="about-desc col-sm-8">
+                    <span class="heading-meta">READ</span>
+                    <h3> Recent feed from blog </h3>
+                    <p> </p>
+
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 animate-box fadeInLeft animated" each={ post in props.data }>
+                        <div class="blog-entry">
+                           
+                            <div class="desc">
+                                <span>
+                                    <small>
+                                        <date value={post.date} format="MMM DD, YYYY" />
+                                        </small>
+                                    
+                                </span>
+                                <h3><a href="{post.link}" target="_blank"> {post.title.rendered}</a></h3>
+
+                                <raw html={post.excerpt.rendered} />
+                                <a href="{post.link}" class="lead">Read More <i class="ti-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+
+    </script>
+    <style>
+
+    </style>
+</blog>

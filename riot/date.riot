@@ -1,0 +1,16 @@
+<date>
+    <script>
+        export default {
+            setInnerHTML() {
+                var format = this.props.format || 'MMM DD, YYYY'
+                this.root.innerHTML = moment(this.props.value).format(format)
+            },
+            onMounted() {
+                this.setInnerHTML()
+            },
+            onUpdated() {
+                this.setInnerHTML()
+            }
+        }
+    </script>
+</date>
