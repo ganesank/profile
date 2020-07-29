@@ -1,216 +1,229 @@
 <main>
-    <div if={ state.loading } class="loader">
-        <img src="puff.svg">
-    </div>
-    <p if={ state.error } class="error">{ state.error }</p>
-    <div id="page-page">
-        <a href="#" class="js-page-nav-toggle page-nav-toggle"><i></i></a>
-        <aside id="page-aside" role="complementary" class="border js-fullheight">
-            <h1 id="page-logo"><a href="index.html"><span>GANESAN </span><span>KARUPPAIYA</span></a></h1>
-            <nav id="page-main-menu" role="navigation">
-                <ul>
-                    <li each={ item in state.menu }>
-                        <a class="active" href="#{ item.slug }"> { item.title } </a>
-                    </li>
-                    <li  >
-                        <a href="https://ganesankar.github.io/cv/" target="_blank">  Resume</a>
-                    </li>
-                </ul>
-            </nav>
+    <div class={state.aside ? 'offcanvas' : '' }>
+        <div if={ state.loading } class="loader">
+            <img src="puff.svg">
+        </div>
+        <p if={ state.error } class="error">{ state.error }</p>
+        <div id="page-page">
+            <a href="#" class={`js-page-nav-toggle page-nav-toggle ${state.aside ? 'active' : '' }`} 
+            class="" onclick={ menuToggle}><i></i></a>
+            <aside id="page-aside" role="complementary" class="border js-fullheight">
+                <h1 id="page-logo"><a href="index.html"><span>GANESAN </span><span>KARUPPAIYA</span></a></h1>
+                <nav id="page-main-menu" role="navigation">
+                    <ul>
+                        <li each={ item in state.menu }>
+                            <a class="active" href="#{ item.slug }"> { item.title } &nbsp; <i
+                                    class="text-danger { item.icon }"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://ganesankar.github.io/cv/" target="_blank"> Resume <i
+                                    class="text-danger ti-clipboard"></i></a>
+                        </li>
+                    </ul>
+                </nav>
 
-            <div class="page-footer">
-                <p><small>
-                        Copyright &copy; 2020 All rights reserved <br/> Designed and Developed by  by <a href="https://ganesan.xyz" target="_blank">Ganesan Karuppaiya</a>
-                        </span>
-                    </small></p>
-                <ul class="social">
-                    <li><a target="_blank" href="http://ganesan.xyz"><i class="ti-wordpress"></i></a></li>
-                    <li><a target="_blank" href="http://facebook.com/ganesankars"><i class="ti-facebook"></i></a></li>
-                    <li><a target="_blank" href="http://instagram.com/ganesankar"><i class="ti-instagram"></i></a></li>
-                    <li><a target="_blank" href="http://twitter.com/ganesankar"><i class="icon-twitter2"></i></a></li>
-                    <li><a target="_blank" href="https://in.linkedin.com/in/ganesankar"><i class="ti-linkedin"></i></a></li>
-                    <li><a target="_blank" href="https://github.com/ganesankar"><i class="ti-github"></i></a></li>
-                </ul>
-            </div>
-
-        </aside>
-
-        <div id="page-main">
-
-            <div if={ state.list }>
-                <div each={ item in state.menu } id="{ item.slug }" class="section">
-
-                    <intro if={ item.slug=='intro' } />
-                    <about if={ item.slug=='about' } />
-                    <services if={ item.slug=='services' } />
-                    <skills if={ item.slug=='skills' } data={ state.skills } />
-                    <experience if={ item.slug=='experience' } data={ state.experience } />
-                    <education if={ item.slug=='education' } data={ state.education } />
-                    <awards if={ item.slug=='awards' } data={ state.awards } />
-                    <gitprojects if={ item.slug=='gitprojects' } data={ state.gitprojects }/>
+                <div class="page-footer">
+                    <p><small>
+                            Copyright &copy; 2020 <br /> All rights reserved <br /> Designed and Developed by <a
+                                href="https://ganesan.xyz" target="_blank">Ganesan Karuppaiya</a>
+                            </span>
+                        </small></p>
+                    <ul class="social">
+                        <li><a target="_blank" href="http://ganesan.xyz"><i class="ti-wordpress"></i></a></li>
+                        <li><a target="_blank" href="http://facebook.com/ganesankars"><i class="ti-facebook"></i></a>
+                        </li>
+                        <li><a target="_blank" href="http://instagram.com/ganesankar"><i class="ti-instagram"></i></a>
+                        </li>
+                        <li><a target="_blank" href="http://twitter.com/ganesankar"><i class="icon-twitter2"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://in.linkedin.com/in/ganesankar"><i
+                                    class="ti-linkedin"></i></a>
+                        </li>
+                        <li><a target="_blank" href="https://github.com/ganesankar"><i class="ti-github"></i></a></li>
+                    </ul>
                 </div>
-            </div>
 
-            <div id="get-in-touch" class="page-bg-color">
-                <div class="page-narrow-content">
-                    <div class="row">
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <h2>Start a conversation!</h2>
-                        </div>
+            </aside>
+
+            <div id="page-main">
+
+                <div if={ state.list }>
+                    <div each={ item in state.menu } id="{ item.slug }" class="section">
+
+                        <intro if={ item.slug=='intro' } />
+                        <about if={ item.slug=='about' } />
+                        <services if={ item.slug=='services' } />
+                        <skills if={ item.slug=='skills' } data={ state.skills } />
+                        <experience if={ item.slug=='experience' } data={ state.experience } />
+                        <education if={ item.slug=='education' } data={ state.education } />
+                        <awards if={ item.slug=='awards' } data={ state.awards } />
+                        <gitprojects if={ item.slug=='gitprojects' } data={ state.gitprojects } />
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-                            data-animate-effect="fadeInLeft">
-                            
-                            <p class="page-lead">Would you like to discuss on your project? Or maybe you just want to say hello?
-                             </p>
-                            <p><a href="mailto:ganesank@live.com" class="btn btn-primary btn-learn">Contact me!</a></p>
-                        </div>
+                </div>
 
+                <div id="get-in-touch" class="page-bg-color">
+                    <div class="page-narrow-content">
+                        <div class="row">
+                            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                                <h2>Start a conversation!</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                                data-animate-effect="fadeInLeft">
+
+                                <p class="page-lead">Would you like to discuss on your project? Or maybe you just want
+                                    to
+                                    say hello?
+                                </p>
+                                <p><a href="mailto:ganesank@live.com" class="btn btn-primary btn-learn">Contact me!</a>
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
 
-    <script>
-        riot.mount('intro')
-        export default {
-            state: {
-                loading: false,
-                lastSearch: null,
-                error: null,
-                results: [],
-                list: [],
-                menu: [{
-                    id: 1,
-                    slug: 'intro',
-                    title: 'Intro'
-                }, {
-                    id: 2,
-                    slug: 'about',
-                    title: 'About Me'
-                }, {
-                    id: 1,
-                    slug: 'services',
-                    title: 'What I do'
-                }, {
-                    id: 1,
-                    slug: 'skills',
-                    title: 'Skilled with'
-                }, {
-                    id: 1,
-                    slug: 'experience',
-                    title: 'Experience '
-                }, {
-                    id: 1,
-                    slug: 'education',
-                    title: 'Education'
-                }, {
-                    id: 1,
-                    slug: 'gitprojects',
-                    title: 'GitHub Projects'
-                }, {
-                    id: 1,
-                    slug: 'awards',
-                    title: 'Awards'
-                }],
-                gitprojects:[{
-                    name: 'Wordpress Angular FrontEnd SPA',
-                    desc: 'Wordpress Angular FrontEnd SPA',
-                    technology: 'Angular, ',
-                    img: 'https://via.placeholder.com/80/dedede/cccccc/?text=WAF',
-                    elink: 'https://github.com/ganesankar/angular-wp-ui'
-                },
-                {
-                    name: 'Wordpress ReactJS Redux FrontEnd SPA',
-                    desc: 'Wordpress ReactJS Redux FrontEnd SPA',
-                    technology: 'ReactJS, Redux, Saga, Webpack, HTML5, CSS3 ',
-                    img: 'https://via.placeholder.com/80/dedede/cccccc/?text=WRI',
-                    elink: 'https://github.com/ganesankar/react-redux-saga-wp-ui'
-                },
-                {
-                    name: 'Wordpress VueJS  FrontEnd SPA',
-                    desc: 'Wordpress VueJS Redux FrontEnd SPA',
-                    technology: 'VueJS, Webpack, HTML5, CSS3 ',
-                    img: 'https://via.placeholder.com/80/dedede/cccccc/?text=VUW',
-                    elink: 'https://github.com/ganesankar/vuejs-wp-ui'
-                }]
-            },
-            reset() {
-                this.update({
+        <script>
+            riot.mount('intro')
+            export default {
+                state: {
                     loading: false,
+                    aside: false,
+                    lastSearch: null,
                     error: null,
-
                     results: [],
                     list: [],
-                })
-            },
-            search(e) {
-                const search = e.target.value
-
-                this.reset()
-
-                if (this.state.lastSearch !== search) {
+                    menu: [{
+                        id: 1,
+                        slug: 'intro',
+                        title: 'Intro',
+                        icon: 'ti-home',
+                        icon: 'ti-home'
+                    }, {
+                        id: 2,
+                        slug: 'about',
+                        title: 'About Me',
+                        icon: 'ti-info-alt'
+                    }, {
+                        id: 1,
+                        slug: 'services',
+                        title: 'What I do',
+                        icon: 'ti-wand'
+                    }, {
+                        id: 1,
+                        slug: 'skills',
+                        title: 'Skilled with',
+                        icon: 'ti-home'
+                    }, {
+                        id: 1,
+                        slug: 'experience',
+                        title: 'Experience ',
+                        icon: 'ti-briefcase'
+                    }, {
+                        id: 1,
+                        slug: 'education',
+                        title: 'Education',
+                        icon: 'ti-book'
+                    }, {
+                        id: 1,
+                        slug: 'gitprojects',
+                        title: 'GitHub Projects',
+                        icon: 'ti-github'
+                    }, {
+                        id: 1,
+                        slug: 'awards',
+                        title: 'Awards',
+                        icon: 'ti-medall'
+                    }],
+                    gitprojects: [{
+                            name: 'Wordpress Angular FrontEnd SPA',
+                            desc: 'Wordpress Angular FrontEnd SPA',
+                            technology: 'Angular, ',
+                            img: 'https://via.placeholder.com/80/dedede/cccccc/?text=WAF',
+                            elink: 'https://github.com/ganesankar/angular-wp-ui'
+                        },
+                        {
+                            name: 'Wordpress ReactJS Redux FrontEnd SPA',
+                            desc: 'Wordpress ReactJS Redux FrontEnd SPA',
+                            technology: 'ReactJS, Redux, Saga, Webpack, HTML5, CSS3 ',
+                            img: 'https://via.placeholder.com/80/dedede/cccccc/?text=WRI',
+                            elink: 'https://github.com/ganesankar/react-redux-saga-wp-ui'
+                        },
+                        {
+                            name: 'Wordpress VueJS  FrontEnd SPA',
+                            desc: 'Wordpress VueJS Redux FrontEnd SPA',
+                            technology: 'VueJS, Webpack, HTML5, CSS3 ',
+                            img: 'https://via.placeholder.com/80/dedede/cccccc/?text=VUW',
+                            elink: 'https://github.com/ganesankar/vuejs-wp-ui'
+                        }
+                    ]
+                },
+                reset() {
                     this.update({
-                        loading: true
-                    })
-                    this.doApiRequest(search)
-                }
+                        loading: false,
+                        error: null,
 
-                this.state.lastSearch = search
-            },
-            doApiRequest(search) {
-                return debounce((search) => {
-                    fetch(`https://ganesan-cv-cp.netlify.app/.netlify/functions/cv-read-all`)
-                        .then((res) => res.json())
-                        .then((data) => {
-                            if (this.$('input').value) {
-                                this.update({
-                                    error: data.Error,
-                                    results: data.Search,
-                                })
-                            }
+                        results: [],
+                        list: [],
+                    })
+                },
+
+                menuToggle() {
+                    //this.state.aside = !this.state.aside
+
+
+                    this.update({
+                        aside: !this.state.aside
+                    })
+                    console.log('aside', this.state.aside)
+                },
+                onMounted() {
+                    fetch('https://ganesan-cv-cp.netlify.app/.netlify/functions/cv-read-all')
+                        .then(res => res.json())
+                        .then(data => {
+
+                            const list = [];
+                            data.forEach(function (i) {
+                                list.push(i.data)
+                            });
+                            console.log('list', list)
+                            const skills = list.find(x => x.tag === 'expertise').content;
+                            const experience = list.find(x => x.tag === 'experience').content;
+                            const education = list.find(x => x.tag === 'education').content;
+                            const awards = list.find(x => x.tag === 'awards').content;
+                            this.update({
+                                list,
+                                skills,
+                                experience,
+                                education,
+                                awards
+                            })
+
+                        })
+
+                    fetch('./data/git-projects.json')
+                        .then(res => res.json())
+                        .then(gitprojects => {
+
 
                             this.update({
-                                loading: false
+                                gitprojects,
                             })
-                        })
-                }, 500)(search)
-            },
-            onMounted() {
-                fetch('https://ganesan-cv-cp.netlify.app/.netlify/functions/cv-read-all')
-                    .then(res => res.json())
-                    .then(data => {
 
-                        const list = [];
-                        data.forEach(function (i) {
-                            list.push(i.data)
-                        });
-                        console.log('list', list)
-                        const skills = list.find(x => x.tag === 'expertise').content;
-                        const experience = list.find(x => x.tag === 'experience').content;
-                        const education= list.find(x => x.tag === 'education').content;
-                        const awards= list.find(x => x.tag === 'awards').content;
-                        this.update({
-                            list,
-                            skills,
-                            experience,
-                            education,
-                            awards
                         })
-
-                    })
+                }
             }
-        }
-    </script>
+        </script>
 
-    <style>
-        .section {
-            min-height: 100vh
-        }
-    </style>
+        <style>
+            .section {
+                min-height: 100vh
+            }
+        </style>
 </main>

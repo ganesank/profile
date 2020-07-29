@@ -483,11 +483,11 @@ figure figcaption {
     }
 }
 
-body.offcanvas {
+.offcanvas {
     overflow-x: hidden;
 }
 
-body.offcanvas #page-aside {
+.offcanvas #page-aside {
     -moz-transform: translateX(0);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -499,8 +499,8 @@ body.offcanvas #page-aside {
     position: fixed;
 }
 
-body.offcanvas #page-main,
-body.offcanvas .page-nav-toggle {
+.offcanvas #page-main,
+.offcanvas .page-nav-toggle {
     top: 0;
     -moz-transform: translateX(270px);
     -webkit-transform: translateX(270px);
