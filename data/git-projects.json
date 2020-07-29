@@ -1,0 +1,405 @@
+[
+    {
+        
+        
+            "id": "253334815364874752",
+            "link": "https://ganesan-cv-angular.netlify.com/",
+            "git": "https://github.com/ganesankar/cv-angular-netlify",
+            "name": "Angular CV",
+            "bgr": "#1976d2",
+            "color": "#fff",
+            "img": "media/angular.png",
+            "title": "Angular CV",
+            "story": "#1976d2",
+            "desc": "Developed using Angular, Angular Material, RxJS Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "Angular",
+                "Material",
+                "RxJS"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "Element UI, Vue.js, Nuxt.js"
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Vue Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ],
+            "modified": 15906880710120000
+        
+    },
+    {
+       
+       
+            "id": 1,
+            "link": "https://ganesan-cv-reactjs.netlify.com/",
+            "git": "https://github.com/ganesankar/cv-react-netlify-faunadb",
+            "name": "ReactJS CV",
+            "bgr": "#282c34",
+            "color": "#fff",
+            "img": "media/reactjs.png",
+            "title": "Angular CV",
+            "story": "#1976d2",
+            "desc": "Developed using ReactJS, Bootstrap, REdux Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "React",
+                "Bootstrap",
+                "Redux"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "Element UI, Vue.js, Nuxt.js"
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Vue Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+       
+    },
+    {
+        
+        
+            "id": 1,
+            "link": "https://ganesan-cv-vuejs.netlify.com/",
+            "git": "https://github.com/ganesankar/cv-vuejs-netlify-faunadb1",
+            "name": "Vuejs CV",
+            "bgr": "#309d6c",
+            "img": "media/vuejs.png",
+            "title": "Angular CV",
+            "story": "#1976d2",
+            "desc": "Developed using VueJS, Nuxt, ElementUI Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "Element UI",
+                "Vue.js",
+                "Nuxt.js"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "Element UI, Vue.js, Nuxt.js"
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Vue Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+       
+    },
+    {
+        
+       
+            "id": 1,
+            "link": "https://ganesan-cv-svelte.netlify.com/",
+            "git": "https://github.com/ganesankar/cv-svelte-netlify-faunadb",
+            "name": "Svelte CV",
+            "bgr": "#ff3c00",
+            "img": "media/svelte.png",
+            "title": "Angular CV",
+            "story": "#1976d2",
+            "desc": "Developed using Svelte, Bulma  Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "Bulma",
+                "Svelte"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "Svelte, Bulma "
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Vue Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+        
+    },
+    {
+        
+            "id": 1,
+            "link": "https://ganesan-cv-mithril.netlify.com/",
+            "git": "https://github.com/ganesankar/cv-mithril-netlify",
+            "name": "Mithril CV",
+            "bgr": "#282c34",
+            "img": "media/mithril.png",
+            "title": "Angular CV",
+            "story": "#1976d2",
+            "desc": "Developed using mithril, Spectre  Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "Spectre",
+                "Mithril"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "Spectre, mithril "
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+        
+    },
+    {
+       
+            "id": 1,
+            "link": "https://ganesan-cv-ui-backbonejs.netlify.app/",
+            "git": "https://github.com/ganesank/cv-ui-backbonejs",
+            "name": "BackBone CV",
+            "bgr": "#f5f7ff",
+            "color": "#002a41",
+            "img": "media/backbone.png",
+            "title": "BackBone CV",
+            "story": "#000000",
+            "desc": "Developed using BackBoneJS, MarionetteJS ,UnderScoreJS, PrimerCSS Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "BackBoneJS",
+                "MarionetteJS",
+                "UnderScoreJS",
+                "PrimerCSS"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "backbonejs, MarionetteJS "
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+        
+    },
+    {
+        
+            "id": 1,
+            "link": "https://ganesan-cv-ui-riot.netlify.app/",
+            "git": "https://github.com/ganesank/cv-ui-riotjs",
+            "name": "RiotJS CV",
+            "bgr": "#ffffff",
+            "color": "#f00",
+            "img": "media/riot.svg",
+            "title": "RiotJS CV",
+            "story": "#a0a0a0",
+            "desc": "Developed using RiotJS,  Paper CSS Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "RiotJS",
+                "Paper CSS"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "backbonejs, MarionetteJS "
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+    
+    },
+    {
+        
+            "id": 1,
+            "link": "https://ganesan-cv-ui-aurelia.netlify.app/",
+            "git": "https://github.com/ganesank/cv-ui-aurelia",
+            "name": "AureliaJS CV",
+            "bgr": "#ffffff",
+            "color": "#77317a",
+            "img": "media/aurelia-logo.png",
+            "title": "AureliaJS CV",
+            "story": "#ffffff",
+            "desc": "Developed using AureliaJS,  Picnic CSS Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "AureliaJS",
+                "PicnicCSS"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "backbonejs, MarionetteJS "
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ]
+        
+    },
+    {
+        
+            "id": "255623990608921090",
+            "link": "https://ganesan-cv-ember.netlify.com/",
+            "git": "https://github.com/ganesankar/cv-ember-netlify-faunadb",
+            "name": "Ember CV",
+            "bgr": "#e04930",
+            "img": "media/ember.png",
+            "title": "Angular CV",
+            "story": "#1976d2",
+            "desc": "Developed using ember, Spectre  Hosted in Netlify Using FaunaDB and Lambda Functions as backend",
+            "tags": [
+                "Spectre",
+                "ember"
+            ],
+            "technology": [
+                {
+                    "name": "JavaScript Framework",
+                    "address": "Spectre, ember "
+                },
+                {
+                    "name": "JavaScript Library",
+                    "address": "Lodash, Luxon"
+                },
+                {
+                    "name": "Server",
+                    "address": "Netlify, Lambda"
+                },
+                {
+                    "name": "CDN",
+                    "address": "Netlify"
+                },
+                {
+                    "name": "Database",
+                    "address": "FaunaDB"
+                },
+                {
+                    "name": "Others",
+                    "address": "Webpack, Normalize, ESLint, ScSS"
+                }
+            ],
+            "modified": 15906841848020000
+        
+    }
+]

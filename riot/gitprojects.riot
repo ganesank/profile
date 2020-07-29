@@ -4,21 +4,25 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="about-desc col-sm-8">
-                     <span class="heading-meta">experiments</span>
-                    <h3>  Opensource Projects developed </h3>
+                    <span class="heading-meta">experiments</span>
+                    <h3> Opensource Projects developed </h3>
                     <p> </p>
 
                 </div>
             </div>
-            <div class="row" >
-                <div class="col-lg-6 pl-3" each={ (link, index) in props.data }>
-                    <div class="page-feature animate-box fadeInLeft animated mb-0" data-animate-effect="fadeInLeft">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 p-3" each={ (link, index) in props.data }>
 
-                        <div class="page-text">
-                            <h3 class="mb-0 mt-3"> <a href={link.elink} target="_blank">{link.name} </a></h3>
-
-                                <p  class="mt-1 mb-1" href="#">{link.desc} </p>
-                                <p class="badge" >{link.technology} </p>
+                    <div class="card">
+                        <div class="card-body">
+                            <a class="card-title"> {link.name}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">{link.title}</h6>
+                                <p class="card-text">{link.desc}</p>
+                                <div>
+                                    <span class="badge" each={ t in link.tags }> {t}</span>
+                                </div> 
+                                <a href="{link.link}" target="_blank" class="card-link"> <i class="ti-new-window"></i> </a>
+                                <a href="{link.git}" target="_blank" class="card-link"><i class="ti-github"></i> </a>
                         </div>
                     </div>
 
