@@ -1543,7 +1543,7 @@ figure figcaption {
     }
 }
 .social {float: right; 
-    margin: 0 0 1rem 0;}
+    margin: 0 0 1rem 0; padding: 0;}
 .social li { list-style: none;
     float: right;
     padding: 0px 0 0 10px;}
